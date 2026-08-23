@@ -1,0 +1,32 @@
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+dist/
+
+# Java
+**/target/
+*.class
+
+# TypeScript and web
+node_modules/
+coverage/
+build/
+*.tsbuildinfo
+
+# Runtime output
+*.log
+.runtime/
