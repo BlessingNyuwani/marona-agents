@@ -22,6 +22,8 @@ COPY --from=builder /wheels /wheels
 RUN python -m pip install --no-cache-dir /wheels/* \
     && rm -rf /wheels
 COPY apps/chat-ui ./chat-ui
+RUN mkdir -p /app/.marona \
+    && chown -R marona:marona /app
 
 USER 10001:10001
 EXPOSE 8080

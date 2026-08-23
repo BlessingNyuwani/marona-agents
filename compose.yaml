@@ -1,0 +1,27 @@
+name: marona-agents
+
+services:
+  python-chat:
+    build:
+      context: .
+      dockerfile: examples/python/Dockerfile
+    environment:
+      MARONA_API_KEY: ${MARONA_API_KEY:?Set MARONA_API_KEY before starting Compose}
+      MARONA_MODEL: ${MARONA_MODEL:-marona/auto}
+      MARONA_APP_SLUG: ${MARONA_APP_SLUG:-}
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  typescript-chat:
+    profiles: ["typescript"]
+    build:
+      context: .
+      dockerfile: examples/typescript/Dockerfile
+    environment:
+      MARONA_API_KEY: ${MARONA_API_KEY:?Set MARONA_API_KEY before starting Compose}
+      MARONA_MODEL: ${MARONA_MODEL:-marona/auto}
+      MARONA_APP_SLUG: ${MARONA_APP_SLUG:-}
+    ports:
+      - "8081:8080"
+    restart: unless-stopped

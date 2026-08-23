@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A minimal chat interface for the Marona Agents examples." />
+    <title>Marona Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="https://platform.marona.ai" aria-label="Marona home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Marona Agent</span>
+        </a>
+        <span class="status"><span class="status-dot"></span>Runtime connected</span>
+      </header>
+
+      <section class="hero" id="welcome">
+        <p class="eyebrow">Provider-neutral AI</p>
+        <h1>What can we build together?</h1>
+        <p>
+          This client sends messages to the example Agent backend. Your API key remains on the
+          server and is never exposed to the browser.
+        </p>
+        <div class="suggestions" aria-label="Suggested prompts">
+          <button type="button" data-prompt="Explain Marona AI Runtime in simple terms.">
+            Explain the runtime
+          </button>
+          <button type="button" data-prompt="Show me how an Agent can use MCP Apps.">
+            Connect an MCP App
+          </button>
+          <button type="button" data-prompt="When should I use a multi-agent workflow?">
+            Design a multi-agent flow
+          </button>
+        </div>
+      </section>
+
+      <section class="conversation" id="conversation" aria-live="polite"></section>
+
+      <form class="composer" id="composer">
+        <label class="sr-only" for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="1"
+          maxlength="12000"
+          placeholder="Message your Marona Agent"
+          required
+        ></textarea>
+        <button class="send" type="submit" aria-label="Send message">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h13M13 6l6 6-6 6" />
+          </svg>
+        </button>
+      </form>
+      <p class="notice">Example interface · Verify important information before acting.</p>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
