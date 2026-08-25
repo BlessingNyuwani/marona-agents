@@ -12,7 +12,8 @@
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <marona.version>0.13.8</marona.version>
+    <marona.version>0.14.2</marona.version>
+    <marona.sdk.version>0.14.2</marona.sdk.version>
     <junit.version>5.12.2</junit.version>
   </properties>
 
@@ -21,6 +22,11 @@
       <groupId>ai.marona</groupId>
       <artifactId>marona</artifactId>
       <version>${marona.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ai.marona</groupId>
+      <artifactId>marona-sdk</artifactId>
+      <version>${marona.sdk.version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
