@@ -57,3 +57,13 @@ jobs:
           java-version: "17"
           cache: maven
       - run: mvn --batch-mode verify
+
+  rust:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/rust
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --locked

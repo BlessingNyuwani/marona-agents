@@ -3,21 +3,21 @@
 Production-shaped examples for building provider-neutral AI Agents with
 [Marona AI Runtime](https://platform.marona.ai). The repository demonstrates a
 managed Agent, a multi-agent graph, bring-your-own-agent integration, realtime
-voice, and a shared Chat UI in Python, TypeScript, and Java.
+voice, and a shared Chat UI in Python, TypeScript, Java, and Rust.
 
 Created and maintained by **Blessing Nyuwani**, Applied AI Engineer and creator
 of Marona AI Runtime.
 
 ## Examples
 
-| Capability | Python | TypeScript | Java |
-| --- | :---: | :---: | :---: |
-| Marona Agent | ✓ | ✓ | ✓ |
-| Multi-agent delegation and handoff | ✓ | ✓ | ✓ |
-| Bring your own Agent | ✓ | ✓ | ✓ |
-| Realtime voice | ✓ | ✓ | ✓ |
-| Chat UI server | ✓ | ✓ | ✓ |
-| Automated contract tests | ✓ | ✓ | ✓ |
+| Capability | Python | TypeScript | Java | Rust |
+| --- | :---: | :---: | :---: | :---: |
+| Marona Agent | ✓ | ✓ | ✓ | ✓ |
+| Multi-agent delegation and handoff | ✓ | ✓ | ✓ | — |
+| Bring your own Agent | ✓ | ✓ | ✓ | — |
+| Realtime voice | ✓ | ✓ | ✓ | — |
+| Chat UI server | ✓ | ✓ | ✓ | — |
+| Automated contract tests | ✓ | ✓ | ✓ | ✓ |
 
 Each language is independent:
 
@@ -25,6 +25,7 @@ Each language is independent:
 - [TypeScript](examples/typescript/README.md) uses `marona@0.13.8` with a frozen lockfile.
 - [Java](examples/java/README.md) uses `ai.marona:marona:0.14.2`,
   `ai.marona:marona-sdk:0.14.2`, and Java 17.
+- [Rust](examples/rust/README.md) uses the official `marona = "0.14.0"` crates.io package.
 
 ## Quick start
 
@@ -53,6 +54,7 @@ marona-agents/
 ├── examples/python/         # Python package, tests, and container
 ├── examples/typescript/     # TypeScript package, tests, lockfile, and container
 ├── examples/java/           # Java 17 Maven project and tests
+├── examples/rust/           # Rust example using the official crates.io client
 ├── docs/                    # Architecture and expected behavior
 └── compose.yaml             # Reproducible local Chat UI runtimes
 ```
