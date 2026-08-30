@@ -43,3 +43,13 @@ jobs:
           cache-dependency-path: examples/typescript/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
+
+  rust:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/rust
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --locked
