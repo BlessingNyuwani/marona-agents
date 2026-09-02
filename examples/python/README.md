@@ -3,7 +3,7 @@
 ## Requirements
 
 - Python 3.11+
-- A Marona API key from <https://platform.marona.ai>
+- A required Marona Developer Key from <https://platform.marona.ai>
 
 ## Install
 
@@ -14,7 +14,9 @@ python -m pip install -e '.[dev]'
 cp ../../.env.example .env
 ```
 
-Export the values from `.env`, then run one example:
+Set `MARONA_API_KEY=mr_live_xxxxx` in `.env` using your real developer key,
+export the values, then run one example. The placeholder is not a real key and
+must not be committed with a real value.
 
 ```bash
 python -m marona_agents_examples basic-agent

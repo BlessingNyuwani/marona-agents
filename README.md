@@ -29,11 +29,12 @@ Each language is independent:
 
 ## Quick start
 
-Create an API key at <https://platform.marona.ai>, then run the Python Chat UI:
+Create a Marona Developer Key at <https://platform.marona.ai>. The value below
+is a placeholder; replace it locally and never commit the real key.
 
 ```bash
 cp .env.example .env
-# Set MARONA_API_KEY in .env.
+# Set MARONA_API_KEY=mr_live_xxxxx in .env using your real developer key.
 docker compose up --build
 ```
 
@@ -45,6 +46,17 @@ docker compose --profile typescript up --build typescript-chat
 
 The browser client is dependency-free and contains no API key. See the
 [architecture](docs/architecture.md) and [expected output](docs/expected-output.md).
+
+## Marona Developer Key is required
+
+`MARONA_API_KEY` is mandatory for every Marona Runtime operation, including
+Marona-managed, BYOK, local, private, external, and self-hosted models. It
+authenticates the developer and project with Marona; model-provider credentials
+such as `OPENAI_API_KEY` are separate and do not replace it.
+
+The examples fail immediately when `MARONA_API_KEY` is missing, empty, or
+whitespace-only. Create and manage developer keys at
+<https://platform.marona.ai> and never commit a real key.
 
 ## Repository structure
 
