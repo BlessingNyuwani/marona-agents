@@ -10,7 +10,7 @@ from marona import Agent, Marona, Runner, ToolContext, function_tool, handoff
 from .config import required_api_key, selected_model
 
 
-@function_tool(permissions=["billing.refund.read"], timeout_ms=5_000)  # type: ignore[misc]
+@function_tool(permissions=["billing.refund.read"], timeout_ms=5_000)  # type: ignore[untyped-decorator]
 def check_refund(
     amount: float,
     duplicate_charge: bool,
