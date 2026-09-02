@@ -23,7 +23,8 @@ Each language is independent:
 
 - [Python](examples/python/README.md) uses `marona==0.13.9`.
 - [TypeScript](examples/typescript/README.md) uses `marona@0.13.8` with a frozen lockfile.
-- [Java](examples/java/README.md) uses `ai.marona:marona:0.13.8` and Java 17.
+- [Java](examples/java/README.md) uses `ai.marona:marona:0.14.2`,
+  `ai.marona:marona-sdk:0.14.2`, and Java 17.
 - [Rust](examples/rust/README.md) uses the official `marona = "0.14.0"` crates.io package.
 
 ## Quick start
@@ -73,10 +74,9 @@ session identifiers to Marona; they do not expose provider credentials.
 
 ## Java package availability
 
-The Java source and tests are verified against the current sibling Marona SDK.
-The SDK is not yet published to Maven Central, so the Java README includes the
-temporary local installation command. Java CI should be enabled as soon as
-`ai.marona:marona:0.13.8` is publicly resolvable.
+The Java examples resolve the published Marona packages directly from Maven
+Central. The Agent examples use `ai.marona:marona`; the bring-your-own-agent
+example uses the focused `ai.marona:marona-sdk` MCP entry point.
 
 ## Contributing and security
 

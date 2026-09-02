@@ -6,17 +6,9 @@
 - Maven 3.9+
 - A Marona API key from <https://platform.marona.ai>
 
-The Java SDK is currently installed from the adjacent Marona AI Runtime source
-until `ai.marona:marona` is published to Maven Central:
-
-```bash
-cd ../../../edge-node-service/clients/java
-mvn install
-cd ../../../marona-agents/examples/java
-```
-
-After the artifact is public, only the normal `mvn` commands below will be
-required.
+Maven resolves `ai.marona:marona:0.14.2` and
+`ai.marona:marona-sdk:0.14.2` directly from Maven Central. No sibling checkout
+or local SDK installation is required.
 
 ## Run
 
