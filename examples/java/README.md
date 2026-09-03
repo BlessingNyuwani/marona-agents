@@ -6,9 +6,8 @@
 - Maven 3.9+
 - A required Marona Developer Key from <https://platform.marona.ai>
 
-Maven resolves `ai.marona:marona:0.14.2` and
-`ai.marona:marona-sdk:0.14.2` directly from Maven Central. No sibling checkout
-or local SDK installation is required.
+Maven resolves `ai.marona:marona:1.0.0` directly from Maven Central. No sibling
+checkout or local SDK installation is required.
 
 ## Run
 

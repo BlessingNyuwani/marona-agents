@@ -21,11 +21,10 @@ of Marona AI Runtime.
 
 Each language is independent:
 
-- [Python](examples/python/README.md) uses `marona==0.13.9`.
-- [TypeScript](examples/typescript/README.md) uses `marona@0.13.8` with a frozen lockfile.
-- [Java](examples/java/README.md) uses `ai.marona:marona:0.14.2`,
-  `ai.marona:marona-sdk:0.14.2`, and Java 17.
-- [Rust](examples/rust/README.md) uses the official `marona = "0.14.0"` crates.io package.
+- [Python](examples/python/README.md) uses `marona==1.0.0`.
+- [TypeScript](examples/typescript/README.md) uses `marona@1.0.0` with a frozen lockfile.
+- [Java](examples/java/README.md) uses `ai.marona:marona:1.0.0` and Java 17.
+- [Rust](examples/rust/README.md) uses the official `marona = "1.0.0"` crates.io package.
 
 ## Quick start
 

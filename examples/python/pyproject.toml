@@ -3,7 +3,7 @@ name = "marona-agents-examples"
 version = "0.1.0"
 description = "Runnable Python examples for Marona Agents."
 requires-python = ">=3.11"
-dependencies = ["marona==0.13.9"]
+dependencies = ["marona==1.0.0"]
 
 [project.optional-dependencies]
 dev = ["mypy>=1.15,<2", "pytest>=8,<9", "ruff>=0.11,<1"]

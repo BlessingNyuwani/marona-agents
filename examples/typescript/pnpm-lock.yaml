@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       marona:
-        specifier: 0.13.8
-        version: 0.13.8
+        specifier: 1.0.0
+        version: 1.0.0
     devDependencies:
       '@types/node':
         specifier: ^22.15.0
@@ -24,8 +24,8 @@ packages:
   '@types/node@22.20.1':
     resolution: {integrity: sha512-EANqOCF9QFyra+4pfxUcX9STKJpCLjMbObVzljIJomAWSnuSIEAvyzEU53GaajbXJEgdh0iEcPL+DGvpUd4k1Q==}
 
-  marona@0.13.8:
-    resolution: {integrity: sha512-4B42GOv2SONPLz0SfCTyscrO2ZipoPrAw3E7M5cV7rmGYTdIv0nStEREjghDACe7SLXNxuYvzezCFRRnB/PUjg==}
+  marona@1.0.0:
+    resolution: {integrity: sha512-LcU0+nWr5mZ3qjg48IjohRcmLI8C3lZN8/Nfvaa3bIQwLo71aKu4H18FOQK1iVdLs48kdI+L90nMwREdQhPUgg==}
     engines: {node: '>=18'}
 
   typescript@5.9.3:
@@ -54,7 +54,7 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  marona@0.13.8:
+  marona@1.0.0:
     dependencies:
       ws: 8.21.3
     transitivePeerDependencies:

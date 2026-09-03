@@ -15,7 +15,7 @@
     "test": "pnpm run build && node --test dist/test/*.test.js"
   },
   "dependencies": {
-    "marona": "0.13.8"
+    "marona": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",

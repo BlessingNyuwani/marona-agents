@@ -1,7 +1,7 @@
 package ai.marona.examples;
 
 import ai.marona.MCPConnection;
-import ai.marona.mcp.MaronaMcp;
+import ai.marona.Marona;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.util.List;
@@ -43,8 +43,8 @@ public final class BringYourOwnAgentExample {
     }
 
     public static void run() {
-        try (MaronaMcp mcp = new MaronaMcp(Configuration.requiredApiKey())) {
-            MCPConnection connection = mcp.connect();
+        try (Marona marona = new Marona(Configuration.requiredApiKey())) {
+            MCPConnection connection = marona.hub.connect();
             ExistingAgentAdapter externalAgent = new ExistingAgentAdapter(
                     new MaronaCapabilityConnection(connection)
             );
